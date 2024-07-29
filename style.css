@@ -1,0 +1,68 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: black;
+  margin: 0;
+}
+
+#design {
+  display: flex;
+  width: 100%;
+  aspect-ratio: 100/71;
+  background: white;
+  
+  #imageHolder {
+    position: relative;
+    width: 37%;
+    overflow: hidden;
+
+    #ferns {
+      height: 100%;
+      transform: scale(1.28, 1);
+    }
+
+    #captionLogo {
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  form {
+    width: 63%;
+  }
+}
