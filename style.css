@@ -9,7 +9,7 @@
   margin: 0;
 }
 body {
-  line-height: 1.5;
+  /* line-height: 1.5; */
   -webkit-font-smoothing: antialiased;
 }
 img, picture, video, canvas, svg {
@@ -100,7 +100,47 @@ body {
     }
   }
 
-  form {
+  #contentHolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 63%;
+    background-color: #F9FAFB;
+    font-family: Inter,Helvetica Neue,Helvetica,Arial,sans-serif;
+    /* Get missing fonts */
+
+    section {
+      padding-left: 5%;
+      padding-right: 15%;
+    }
+
+    #pitch {
+      font-weight: bold;
+
+      :last-child {
+        margin-top: 5%;
+      }
+    }
+
+    #formHolder {
+      padding-top: 3%;
+      padding-bottom: 3%;
+      border-top: 1px solid grey;
+      border-bottom: 1px solid grey;
+      background-color: white;
+
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 3%;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          width: 40%;
+        }
+      }
+      
+    }
   }
 }
